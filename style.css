@@ -10,13 +10,20 @@ body {
     max-width: 950px;
     margin: auto;
     max-height: 100vh;
+    background-color: rgb(215, 215, 215);
 }
 
 h1 {
     color: #333;
     margin-top: 1rem;
+    padding: 1.5rem;
     
 }
+
+p {
+    font-size: 1.12rem;
+}
+
 
 .game-container {
     display: grid;
@@ -33,6 +40,15 @@ h1 {
     grid-column-start: 3;
     align-self: flex-end;
     font-size: 40px;
+}
+
+.blueControls {
+    grid-column-start: 3;
+}
+
+.resetControls {
+    grid-column-start: 2;
+    grid-row-start: 3;
 }
 
 .redPlayer {
@@ -65,13 +81,16 @@ h1 {
 }
 
 #result {
-    border: 0.5rem solid black;
-    border-radius: 1rem;
-    font-size: 24px;
-    color: #333;
     grid-column-start: 2;
     grid-row-start: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 0.5rem solid black;
+    border-radius: 1rem;
+    font-size: 24px;
+    color: #333;
+    min-height: 15rem;
+    min-width: 15rem;
+    
 }

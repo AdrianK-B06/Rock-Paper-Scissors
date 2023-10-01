@@ -89,6 +89,8 @@ function determineWinner() {
     }
 }
 
+// Function to reset the game
+
 function resetGame() {
     redPlayerChoice = null;
     bluePlayerChoice = null;
