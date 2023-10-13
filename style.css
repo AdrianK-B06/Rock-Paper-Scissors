@@ -94,3 +94,23 @@ p {
     min-width: 15rem;
     
 }
+
+.red-score, .blue-score {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-size: 1.5rem;
+}
+
+.red-score {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: red;
+}
+
+.blue-score {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: blue;
+}

@@ -15,6 +15,20 @@ let bluePlayerInterval; // animations interval for blue player
 
 let processingKey = false; // Boolean to indicate if key is pressed
 
+let redTeamScore = 0;   // Initialize the red team's score
+let blueTeamScore = 0; // Initialize the blue team's score
+
+// Function to update and display scores
+function updateScores() {
+    const redScoreElement = document.querySelector(".red-score");
+    const blueScoreElement = document.querySelector(".blue-score");
+    
+    redScoreElement.textContent = `Red Team: ${redTeamScore}`;
+    blueScoreElement.textContent = `Blue Team: ${blueTeamScore}`;
+
+
+}
+
 
 // Listen for keydown events to start player animations 
 
@@ -83,9 +97,12 @@ function determineWinner() {
             (redPlayerChoice === "✌🏻" && bluePlayerChoice === "✋🏻")
         )   {
             winnerBox.textContent = "Red Team Wins!";
+            redTeamScore++;
         } else {
             winnerBox.textContent = "Blue Team Wins!";
+            blueTeamScore++;
         }
+        updateScores(); // Update and display scores
     }
 }
 
